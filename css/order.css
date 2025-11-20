@@ -1,0 +1,180 @@
+* {
+  font-family: Ubuntu, sans-serif;
+}
+
+body {
+  background-color: darkgrey;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: #000;
+}
+
+.order {
+  width: 470px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.order__container {
+  padding: 50px;
+}
+
+.order__title-container {
+  display: inline-block;
+}
+
+.order__title-text {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 0 25px 15px 0;
+  border-bottom: 3px solid #000;
+}
+
+.order__content {
+  margin-top: 40px;
+}
+
+.order__content-container {
+  display: flex;
+}
+
+.order__form {
+  width: 100%;
+}
+
+.quickOrder {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.quickOrder-img {
+  min-width: 75px;
+  width: 75px;
+  height: 97px;
+  margin-right: 20px;
+}
+
+.quickOrder-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quickOrder-size {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.quickOrder-size-bold {
+  font-weight: bold;
+  text-transform: none;
+}
+
+.quickOrder-count-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.quickOrder-count {
+  display: flex;
+  align-items: center;
+}
+
+.quickOrder-count__button {
+  font-size: 25px;
+  padding: 7px 15px;
+  text-transform: none;
+}
+
+.quickOrder-price {
+  font-size: 24px;
+}
+
+.quickOrder-info {
+  width: 100%;
+}
+
+.order__form-input {
+  margin-bottom: 30px;
+}
+
+.custom-input {
+  display: flex;
+}
+
+.custom-input input {
+  border: 0;
+  border-bottom: 1px solid #b3b3b3;
+  width: 100%;
+  height: 21px;
+}
+
+.custom-input label {
+  width: 100%;
+  color: #b3b3b3;
+}
+
+input {
+  appearance: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.order-button {
+  width: 50%;
+  height: 56px;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  padding: 0 15px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.grey {
+  background-color: #eee;
+  color: #000;
+}
+
+.black {
+  background-color: #000;
+  color: #fff;
+}
+
+.order-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.quickOrder-count span {
+  display: block;
+  font-size: 24px;
+  min-width: 30px;
+  text-align: center;
+}
+
+.quickOrder-count button {
+  font-size: 25px;
+  padding: 7px 15px;
+}
