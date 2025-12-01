@@ -117,7 +117,7 @@ class Cart {
   removeItem() {
     console.log("Item removed");
   }
-  checkout() {
+  async checkout() {
     console.log("Checkout");
   }
 }
@@ -132,7 +132,7 @@ class Order {
     this.payment = payment;
   }
 
-  calculateTotal() {
+  async calculateTotal() {
     console.log("Calculated");
   }
   changeStatus() {
@@ -149,7 +149,7 @@ class Payment {
     this.id = id;
   }
 
-  process() {
+  async process() {
     console.log("Processing");
   }
   refund() {
