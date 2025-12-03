@@ -16,7 +16,6 @@ let cart = Cart.load();
 renderCart(cart, cartItemsElem);
 
 
-
 let fullname = document.getElementById("fullname");
 let phone = document.getElementById("phone");
 let comment = document.getElementById("comment").value;
@@ -24,6 +23,20 @@ let submitForm = document.getElementById("submit-form");
 let saveInfo = document.getElementById("save-info");
 
 let currentPayment = new Payment("COD", await cart.calculateTotal(), "Pending");
+
+let formDataRaw = localStorage.getItem("userInfo");
+let formData = null;
+
+try {
+  formData = formDataRaw ? JSON.parse(formDataRaw) : null;
+} catch (e) {
+  formData = null;
+}
+
+if (formData) {
+  fullname.value = formData.fullname;
+  phone.value = formData.phone;
+}
 
 document.querySelectorAll('input[name="payment"]').forEach(radio => {
   radio.addEventListener('change', async () => {
