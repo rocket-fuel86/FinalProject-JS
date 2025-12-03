@@ -11,15 +11,6 @@ totalPriceBlock.style.display = "none";
 formBlock.style.display = "none";
 clearCartBtn.style.display = "none";
 
-// const response = await fetch('http://rocketfuel.mywebcommunity.org/shop/get_orders.php', {
-//   method: 'GET',
-//   headers: {
-//     'Content-Type': 'application/json'
-//   }
-// });
-//
-// const orders = await response.json();
-// console.log('Orders:', orders);
 
 let cart = Cart.load();
 renderCart(cart, cartItemsElem);
@@ -32,7 +23,7 @@ let comment = document.getElementById("comment").value;
 let submitForm = document.getElementById("submit-form");
 let saveInfo = document.getElementById("save-info");
 
-let currentPayment = new Payment("COD", 0, "Pending");
+let currentPayment = new Payment("COD", await cart.calculateTotal(), "Pending");
 
 document.querySelectorAll('input[name="payment"]').forEach(radio => {
   radio.addEventListener('change', async () => {
