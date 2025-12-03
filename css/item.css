@@ -1,0 +1,88 @@
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-top: 60px;
+  gap: 10px;
+}
+
+.image-wrapper {
+  width: 505px;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+}
+
+.content-title {
+  margin: 0;
+  padding: 0;
+  font-size: 34px;
+  font-weight: 400;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.content-desc {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.content-price {
+  font-size: 26px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.content-size {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.content-size-option {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 300;
+  padding: 8px;
+  background-color: #eaeaea;
+  width: 142px;
+  margin-bottom: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.content-buy {
+  padding: 20px 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  background-color: rgb(0, 94, 15);
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 235px;
+  cursor: pointer;
+}
